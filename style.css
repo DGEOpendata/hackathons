@@ -814,14 +814,63 @@ footer h1 {
 }
 
 
+.video-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
 .recap-video {
   width: 416px;
   height: 240px;
+  margin: 0 auto;
 }
 
+/* iPads and Tablets in landscape (1024px) */
+@media (max-width: 1024px) {
+  .recap-video {
+    width: 380px;
+    height: 219px;
+  }
+}
+
+/* iPads and Tablets in portrait (768px - 1023px) */
+@media (max-width: 1023px) and (min-width: 768px) {
+  .recap-video {
+    width: 350px;
+    height: 202px;
+  }
+}
+
+/* Large phones and small tablets */
 @media (max-width: 767px) {
   .recap-video {
     width: 335px;
-    height: 193px; /* Maintaining the same aspect ratio */
+    height: 193px;
+  }
+}
+
+/* Medium-sized phones */
+@media (max-width: 576px) {
+  .recap-video {
+    width: 300px;
+    height: 173px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 375px) {
+  .recap-video {
+    width: 280px;
+    height: 162px;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 320px) {
+  .recap-video {
+    width: 260px;
+    height: 150px;
   }
 }
